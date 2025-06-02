@@ -2,134 +2,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Happy Birthday Namitha 🎉</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        body {
-            margin: 0; padding: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #E3CCE3, #D6D6F5);
-            color: #333;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-            max-width: 700px;
-            margin: auto;
-        }
-        h1 {
-            font-size: 2.5rem;
-            color: #A020F0;
-        }
-        .message {
-            font-size: 1.2rem;
-            margin: 20px auto;
-            line-height: 1.6;
-        }
-        .bts-heart {
-            font-size: 3rem;
-            animation: pulse 1s infinite;
-            color: #ff69b4;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.15); }
-            100% { transform: scale(1); }
-        }
-        .photo-gallery, .video-gallery {
-            margin-top: 30px;
-        }
-        .photo-gallery h2, .video-gallery h2 {
-            color: #A020F0;
-            margin-bottom: 15px;
-        }
-        .photo-gallery img {
-            width: 90%;
-            max-width: 150px;
-            border-radius: 15px;
-            margin: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .photo-gallery img:hover {
-            transform: scale(1.1);
-        }
-        .video-gallery video {
-            width: 90%;
-            max-width: 320px;
-            margin: 10px auto;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-            display: block;
-        }
-        .footer {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #777;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Namitha 💜</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fce4ec, #e1bee7);
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 30px;
+      color: #8e24aa;
+    }
+    .message {
+      font-size: 1.2rem;
+      margin: 20px;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 90%;
+      margin: auto;
+    }
+    .slides {
+      display: none;
+      width: 100%;
+      max-height: 400px;
+      border-radius: 15px;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+      border-radius: 0 3px 3px 0;
+      background-color: rgba(0,0,0,0.5);
+      user-select: none;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    .dot-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .dot {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    audio {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="bts-heart">💜</div>
-        <h1>Happy Birthday, Boobie!</h1>
-        <p class="message">
-            To my sweetest Namitha,<br><br>
-            Even though we’re miles apart, my heart is right there with you today.<br>
-            On your special day, I just want to say how lucky I am to have you.<br><br>
-            May your day be as beautiful, bright, and joyful as your smile.<br>
-            I can’t wait to celebrate with you soon. Until then, enjoy this small surprise! 💜
-        </p>
 
-        <div class="photo-gallery">
-            <h2>Our Memories</h2>
-            <!-- Add your 27 photos here -->
-            <img src="photos/photo1.jpg" alt="Photo 1" />
-            <img src="photos/photo2.jpg" alt="Photo 2" />
-            <img src="photos/photo3.jpg" alt="Photo 3" />
-            <img src="photos/photo4.jpg" alt="Photo 4" />
-            <img src="photos/photo5.jpg" alt="Photo 5" />
-            <img src="photos/photo6.jpg" alt="Photo 6" />
-            <img src="photos/photo7.jpg" alt="Photo 7" />
-            <img src="photos/photo8.jpg" alt="Photo 8" />
-            <img src="photos/photo9.jpg" alt="Photo 9" />
-            <img src="photos/photo10.jpg" alt="Photo 10" />
-            <img src="photos/photo11.jpg" alt="Photo 11" />
-            <img src="photos/photo12.jpg" alt="Photo 12" />
-            <img src="photos/photo13.jpg" alt="Photo 13" />
-            <img src="photos/photo14.jpg" alt="Photo 14" />
-            <img src="photos/photo15.jpg" alt="Photo 15" />
-            <img src="photos/photo16.jpg" alt="Photo 16" />
-            <img src="photos/photo17.jpg" alt="Photo 17" />
-            <img src="photos/photo18.jpg" alt="Photo 18" />
-            <img src="photos/photo19.jpg" alt="Photo 19" />
-            <img src="photos/photo20.jpg" alt="Photo 20" />
-            <img src="photos/photo21.jpg" alt="Photo 21" />
-            <img src="photos/photo22.jpg" alt="Photo 22" />
-            <img src="photos/photo23.jpg" alt="Photo 23" />
-            <img src="photos/photo24.jpg" alt="Photo 24" />
-            <img src="photos/photo25.jpg" alt="Photo 25" />
-            <img src="photos/photo26.jpg" alt="Photo 26" />
-            <img src="photos/photo27.jpg" alt="Photo 27" />
-        </div>
+<h1>Happy Birthday, Boobie! 💜</h1>
+<p class="message">
+  To my sweetest Namitha,<br>
+  Even though we’re apart today, you're always close in my heart.<br>
+  I hope this birthday brings a smile just as big as you give me every day.<br>
+  Here's a little memory lane with a song from our hearts. 💜
+</p>
 
-        <div class="video-gallery">
-            <h2>Videos</h2>
-            <video controls>
-                <source src="videos/video1.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <video controls>
-                <source src="videos/video2.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-        </div>
+<div class="slideshow-container">
+  <img class="slides" src="photos/photo1.jpg" />
+  <img class="slides" src="photos/photo2.jpg" />
+  <img class="slides" src="photos/photo3.jpg" />
+  <!-- Add more photos here as needed -->
 
-        <div class="footer">
-            Made with 💜 by Naveen | BTS 💜 Army Forever
-        </div>
-    </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<!-- BTS Romantic Song: Spring Day (replace 'spring_day.mp3' with your file) -->
+<audio autoplay loop>
+  <source src="music/spring_day.mp3" type="audio/mp3" />
+</audio>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
 </body>
 </html>
