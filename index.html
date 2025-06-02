@@ -49,7 +49,6 @@
       background-color: rgba(0,0,0,0.8);
     }
 
-    /* Surprise Popup */
     .popup {
       position: fixed;
       top: 0;
@@ -92,7 +91,6 @@
       cursor: pointer;
     }
 
-    /* Floating hearts */
     .heart {
       position: fixed;
       width: 15px;
@@ -145,20 +143,40 @@
 </p>
 
 <div class="slideshow-container">
-  <!-- Your renamed 27 photos -->
-  <!-- example: -->
-  <img class="slides" src="photos/photo%20(1).jpg" />
-  <img class="slides" src="photos/photo%20(2).jpg" />
-  <img class="slides" src="photos/photo%20(3).jpg" />
-  <!-- Continue till photo (27).jpg -->
-  <!-- ... -->
-  <img class="slides" src="photos/photo%20(27).jpg" />
+  <!-- 27 JPEG photos -->
+  <!-- You can paste more below if needed -->
+  <img class="slides" src="photos/photo%20(1).JPEG" />
+  <img class="slides" src="photos/photo%20(2).JPEG" />
+  <img class="slides" src="photos/photo%20(3).JPEG" />
+  <img class="slides" src="photos/photo%20(4).JPEG" />
+  <img class="slides" src="photos/photo%20(5).JPEG" />
+  <img class="slides" src="photos/photo%20(6).JPEG" />
+  <img class="slides" src="photos/photo%20(7).JPEG" />
+  <img class="slides" src="photos/photo%20(8).JPEG" />
+  <img class="slides" src="photos/photo%20(9).JPEG" />
+  <img class="slides" src="photos/photo%20(10).JPEG" />
+  <img class="slides" src="photos/photo%20(11).JPEG" />
+  <img class="slides" src="photos/photo%20(12).JPEG" />
+  <img class="slides" src="photos/photo%20(13).JPEG" />
+  <img class="slides" src="photos/photo%20(14).JPEG" />
+  <img class="slides" src="photos/photo%20(15).JPEG" />
+  <img class="slides" src="photos/photo%20(16).JPEG" />
+  <img class="slides" src="photos/photo%20(17).JPEG" />
+  <img class="slides" src="photos/photo%20(18).JPEG" />
+  <img class="slides" src="photos/photo%20(19).JPEG" />
+  <img class="slides" src="photos/photo%20(20).JPEG" />
+  <img class="slides" src="photos/photo%20(21).JPEG" />
+  <img class="slides" src="photos/photo%20(22).JPEG" />
+  <img class="slides" src="photos/photo%20(23).JPEG" />
+  <img class="slides" src="photos/photo%20(24).JPEG" />
+  <img class="slides" src="photos/photo%20(25).JPEG" />
+  <img class="slides" src="photos/photo%20(26).JPEG" />
+  <img class="slides" src="photos/photo%20(27).JPEG" />
 
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
 </div>
 
-<!-- Surprise Popup -->
 <div class="popup" id="lovePopup">
   <div class="popup-content">
     <h2>💖 Surprise! 💖</h2>
@@ -171,7 +189,6 @@
   </div>
 </div>
 
-<!-- YouTube Music -->
 <iframe
   id="btsMusic"
   src="https://www.youtube.com/embed/xEeFrLSkMm8?autoplay=1&loop=1&playlist=xEeFrLSkMm8&controls=0&mute=0&modestbranding=1"
@@ -200,13 +217,11 @@
 
   setInterval(() => plusSlides(1), 4000);
 
-  // Surprise popup after 4 seconds
   window.onload = function () {
     setTimeout(() => {
       document.getElementById('lovePopup').style.display = 'flex';
     }, 4000);
 
-    // Create floating hearts
     setInterval(() => {
       const heart = document.createElement("div");
       heart.classList.add("heart");
