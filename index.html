@@ -128,11 +128,7 @@
     }
 
     #btsMusic {
-      width: 0;
-      height: 0;
-      border: 0;
-      position: fixed;
-      left: -9999px;
+      display: none; /* Hide iframe */
     }
   </style>
 </head>
@@ -147,7 +143,7 @@
 </p>
 
 <div class="slideshow-container">
-  <!-- 27 JPEG photos -->
+  <!-- Your JPEG photos -->
   <img class="slides" src="photos/photo%20(1).jpeg" />
   <img class="slides" src="photos/photo%20(2).jpeg" />
   <img class="slides" src="photos/photo%20(3).jpeg" />
@@ -191,18 +187,23 @@
     <button class="close-btn" onclick="document.getElementById('lovePopup').style.display='none'">Aww, Love You Too 😘</button>
   </div>
 </div>
+
+<!-- Music Play Button -->
 <button id="playMusicBtn" style="font-size:16px; padding:10px 20px; margin: 20px; cursor:pointer;">
   ▶️ Play BTS Song
 </button>
+
+<!-- Hidden YouTube Iframe -->
 <iframe
   id="btsMusic"
-  src="https://www.youtube.com/embed/xEeFrLSkMm8?autoplay=1&loop=1&playlist=xEeFrLSkMm8&controls=0&mute=0&modestbranding=1"
+  src=""
   frameborder="0"
   allow="autoplay"
   allowfullscreen
 ></iframe>
 
 <script>
+  // Slideshow logic
   let slideIndex = 1;
   showSlides(slideIndex);
 
@@ -222,6 +223,7 @@
 
   setInterval(() => plusSlides(1), 4000);
 
+  // On load show popup and animate hearts
   window.onload = function () {
     setTimeout(() => {
       document.getElementById('lovePopup').style.display = 'flex';
@@ -235,22 +237,16 @@
       setTimeout(() => heart.remove(), 6000);
     }, 500);
   };
-<script>
+
+  // Music button logic
   const musicIframe = document.getElementById('btsMusic');
   const playBtn = document.getElementById('playMusicBtn');
 
   playBtn.addEventListener('click', () => {
-    musicIframe.src = musicIframe.src;
+    musicIframe.src = "https://www.youtube.com/embed/xEeFrLSkMm8?autoplay=1&loop=1&playlist=xEeFrLSkMm8&controls=0&mute=0";
     playBtn.style.display = 'none';
   });
 </script>
-</body>
-</html>
-
-
-</body>
-</html>
-ipt>
 
 </body>
 </html>
