@@ -126,6 +126,9 @@
         opacity: 0;
       }
     }
+<button id="playMusicBtn" style="font-size:16px; padding:10px 20px; margin: 20px; cursor:pointer;">
+  ▶️ Play BTS Song
+</button>
 
     #btsMusic {
       width: 0;
@@ -233,7 +236,18 @@
       setTimeout(() => heart.remove(), 6000);
     }, 500);
   };
+<script>
+  const musicIframe = document.getElementById('btsMusic');
+  const playBtn = document.getElementById('playMusicBtn');
+
+  playBtn.addEventListener('click', () => {
+    musicIframe.src = musicIframe.src;
+    playBtn.style.display = 'none';
+  });
 </script>
+</body>
+</html>
+
 
 </body>
 </html>
