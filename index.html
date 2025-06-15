@@ -468,13 +468,15 @@ Until then, keep this little corner of the internet as a hug from me to you 🫂
   };
 
   // Music button logic
-  const musicIframe = document.getElementById('btsMusic');
-  const playBtn = document.getElementById('playMusicBtn');
+const musicIframe = document.getElementById('btsMusic');
+const playBtn = document.getElementById('playMusicBtn');
 
-  playBtn.addEventListener('click', () => {
-   musicIframe.src = "https://www.youtube.com/embed/WFOg_43UADM?autoplay=1&loop=1&playlist=WFOg_43UADM&controls=0&mute=0";
-    playBtn.style.display = 'none';
-  });
+playBtn.addEventListener('click', () => {
+   // Paste the complete URL here:
+   musicIframe.src = "http://www.youtube.com/watch?v=5BdSZkY6F4M";
+   playBtn.style.display = 'none';
+});
+  
   // Flip cards toggle on click or Enter/Space key press for accessibility
   document.querySelectorAll('.flip-card').forEach(card => {
     card.addEventListener('click', () => {
